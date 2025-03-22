@@ -32,6 +32,7 @@ function Navbar() {
             </nav>
               
               
+            <Button variant="success" onClick={()=>navv("/admin")}>Admin</Button>
             <Button variant="danger" onClick={()=>logout()}>Logout</Button>
 
         </header>
