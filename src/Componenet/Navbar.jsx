@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import Button from 'react-bootstrap/Button';
-import { href, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 
 
@@ -17,7 +17,12 @@ function Navbar() {
   return (
     <div>
         <header className='header'>
-            <a href="" className='logo'>Logo</a>
+          <div className='d-flex align-items-center '>
+          <img  className='rounded-circle pe-2' height={'80 px'} src="./background.jpg" alt="" />
+          
+            <h1 className='logo'>EyeQ</h1>
+          </div>
+
             <div className='search'>
             <input type="text" placeholder='Search here...' />
 

@@ -13,7 +13,7 @@ const CCTVPlayer = () => {
   return (
     <>
     <Navbar/>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 d-flex flex-wrap container mt-5 pt-5">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 d-flex flex-wrap container mt-5 pt-2">
       {videoSources.map((src, index) => (
         <div key={index} className="rounded-xl overflow-hidden shadow-lg">
           <video controls autoPlay loop muted className="w-full h-64 object-cover">

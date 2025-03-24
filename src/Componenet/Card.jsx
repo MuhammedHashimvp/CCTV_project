@@ -33,13 +33,6 @@ function Card() {
       authorization: `token ${sessionStorage.getItem("token")}`,
     };
 
-    // Temporary data since backend is not set up
-    // const tempData = [
-    //   { id: 34, desc: "hi", date: "2025-03-02T08:08:10.443629Z", timestampstart: "10:10", timestampend: "10:11", thumb: "background.jpg" },
-    //   { id: 35, desc: "hi", date: "2025-03-03T08:08:10.443629Z", timestampstart: "10:10", timestampend: "10:11", thumb: "background.jpg" }
-    // ];
-
-    // setInput(tempData);
 
     honda(header)
       .then((res) => {

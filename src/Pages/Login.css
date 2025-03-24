@@ -9,12 +9,12 @@
     padding: 30px 40px;
 }
 .logindiv{
-    min-height: 100vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('background.jpg')
+    background: url("/login.webp")
     no-repeat;
     background-size: cover;
     background-position: center;

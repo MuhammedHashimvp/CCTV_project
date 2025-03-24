@@ -1,5 +1,5 @@
 .header{
-    position: fixed;
+    /* position:;/ */
     top: 0;
     left: 0;
     width: 100%;
@@ -11,6 +11,8 @@
     z-index: 100;
     margin-bottom: 100px;
 }
+
+
 .logo{
     font-size: 32px;
     color:#fff;
