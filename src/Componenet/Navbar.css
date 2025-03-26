@@ -1,25 +1,9 @@
 .header{
-    /* position:;/ */
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
+
     background-color: rgb(3, 14, 68);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    margin-bottom: 100px;
-}
-
-
-.logo{
-    font-size: 32px;
-    color:#fff;
-    font-weight: 700;
-    
 
 }
+
  .navbar a {
     position: relative;
     font-size: 18px;
@@ -38,29 +22,12 @@
     height: 2px;
     background: #fff;
 }
+.nv-success::before{
+    background: #198754 !important;
+}
+.nv-danger::before{
+    background: #DC3545 !important;
+}
 .navbar a:hover::before{
     width: 100%;
-}
-
-.search{
-    width: 30%;
-
-}
-
-.search input{
-    width: 100;
-    padding: 5px 25px;
-    font-size: 18px;
-    border-radius: 15px;
-
-}
-.carddiv{
-    width: 300px;
-    height: 230px;
-    background-color: black;
-    color: #fff;
-}
-.carddiv div{
-    width: 300px;
-    height: 200px;
 }

@@ -13,7 +13,7 @@ function Home() {
     
     
         <Navbar/>
-        <Card/>
+         <Card/> 
         
         <div className='container'>
     <button onClick={()=>live()} type="button" class="btn btn-success">Live Camera</button>
