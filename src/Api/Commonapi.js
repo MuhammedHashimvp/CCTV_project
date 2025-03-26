@@ -1,5 +1,5 @@
 import axios from "axios";
-export const hostip = "http://192.168.135.241:8000"
+export const hostip = "http://localhost:8080"
 
 const CommonApi = (reqHeader, reqMethod, reqUrl, reqBody) => {
     const config = {
