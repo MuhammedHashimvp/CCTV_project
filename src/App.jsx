@@ -6,6 +6,9 @@ import {Routes,Route} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Admin from './Componenet/Admin'
 import Dashboard from './Componenet/Dashboard'
+import Behaviour from './Componenet/Behaviour'
+import Testcomponent from './Componenet/Testcomponent'
+import Students from './Componenet/Students'
 
 
 
@@ -20,6 +23,9 @@ function App() {
         <Route path='/video' element={<Video/>}/>
         <Route path='/admin' element={<Admin/>}/>
         <Route path='/dash' element={<Dashboard/>}/>
+        <Route path='/beh' element={<Behaviour/>}/>
+        <Route path='/stdlist' element={<Students/>}/>
+        <Route path='/test' element={<Testcomponent/>}/>
        </Routes>
        
     </>

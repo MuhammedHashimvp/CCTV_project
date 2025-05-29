@@ -16,7 +16,7 @@ function Home() {
          <Card/> 
         
         <div className='container'>
-    <button onClick={()=>live()} type="button" class="btn btn-success">Live Camera</button>
+    <button onClick={()=>live()} type="button" className="btn btn-success">Live Camera</button>
 
     </div>
 

@@ -32,6 +32,7 @@ function Card() {
       "content-type": "application/json",
       authorization: `token ${sessionStorage.getItem("token")}`,
     };
+    
     honda(header)
       .then((res) => {
         if (res.data) {

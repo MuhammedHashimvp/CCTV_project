@@ -1,0 +1,1457 @@
+[
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-01",
+    "attendance": 33
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-01",
+    "attendance": 17
+  },  
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-01",
+    "attendance": 41
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-02",
+    "attendance": 40
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-02",
+    "attendance": 24
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-02",
+    "attendance": 40
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-03",
+    "attendance": 35
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-03",
+    "attendance": 10
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-03",
+    "attendance": 40
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-04",
+    "attendance": 39
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-04",
+    "attendance": 45
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-04",
+    "attendance": 28
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-05",
+    "attendance": 46
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-05",
+    "attendance": 45
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-05",
+    "attendance": 14
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-06",
+    "attendance": 19
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-06",
+    "attendance": 25
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-06",
+    "attendance": 23
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-07",
+    "attendance": 26
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-07",
+    "attendance": 14
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-07",
+    "attendance": 40
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-08",
+    "attendance": 20
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-08",
+    "attendance": 34
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-08",
+    "attendance": 31
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-09",
+    "attendance": 36
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-09",
+    "attendance": 40
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-09",
+    "attendance": 47
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-10",
+    "attendance": 22
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-10",
+    "attendance": 12
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-10",
+    "attendance": 18
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-11",
+    "attendance": 36
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-11",
+    "attendance": 23
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-11",
+    "attendance": 49
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-12",
+    "attendance": 46
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-12",
+    "attendance": 21
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-12",
+    "attendance": 44
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-13",
+    "attendance": 49
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-13",
+    "attendance": 44
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-13",
+    "attendance": 26
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-14",
+    "attendance": 18
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-14",
+    "attendance": 23
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-14",
+    "attendance": 43
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-15",
+    "attendance": 30
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-15",
+    "attendance": 13
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-15",
+    "attendance": 16
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-16",
+    "attendance": 19
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-16",
+    "attendance": 18
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-16",
+    "attendance": 13
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-17",
+    "attendance": 39
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-17",
+    "attendance": 14
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-17",
+    "attendance": 11
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-18",
+    "attendance": 30
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-18",
+    "attendance": 35
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-18",
+    "attendance": 38
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-19",
+    "attendance": 45
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-19",
+    "attendance": 46
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-19",
+    "attendance": 12
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-20",
+    "attendance": 33
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-20",
+    "attendance": 12
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-20",
+    "attendance": 11
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-21",
+    "attendance": 30
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-21",
+    "attendance": 48
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-21",
+    "attendance": 35
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-22",
+    "attendance": 42
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-22",
+    "attendance": 35
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-22",
+    "attendance": 28
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-23",
+    "attendance": 49
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-23",
+    "attendance": 23
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-23",
+    "attendance": 31
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-24",
+    "attendance": 12
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-24",
+    "attendance": 44
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-24",
+    "attendance": 28
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-25",
+    "attendance": 21
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-25",
+    "attendance": 37
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-25",
+    "attendance": 48
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-26",
+    "attendance": 21
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-26",
+    "attendance": 32
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-26",
+    "attendance": 39
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-27",
+    "attendance": 19
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-27",
+    "attendance": 28
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-27",
+    "attendance": 21
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-28",
+    "attendance": 10
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-28",
+    "attendance": 24
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-28",
+    "attendance": 35
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-29",
+    "attendance": 14
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-29",
+    "attendance": 11
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-29",
+    "attendance": 26
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-30",
+    "attendance": 22
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-30",
+    "attendance": 42
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-30",
+    "attendance": 16
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-01-31",
+    "attendance": 18
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-01-31",
+    "attendance": 19
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-01-31",
+    "attendance": 21
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-01",
+    "attendance": 27
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-01",
+    "attendance": 33
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-01",
+    "attendance": 11
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-02",
+    "attendance": 35
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-02",
+    "attendance": 13
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-02",
+    "attendance": 16
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-03",
+    "attendance": 39
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-03",
+    "attendance": 17
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-03",
+    "attendance": 39
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-04",
+    "attendance": 19
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-04",
+    "attendance": 33
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-04",
+    "attendance": 45
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-05",
+    "attendance": 41
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-05",
+    "attendance": 36
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-05",
+    "attendance": 45
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-06",
+    "attendance": 32
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-06",
+    "attendance": 25
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-06",
+    "attendance": 39
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-07",
+    "attendance": 48
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-07",
+    "attendance": 15
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-07",
+    "attendance": 44
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-08",
+    "attendance": 14
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-08",
+    "attendance": 28
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-08",
+    "attendance": 22
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-09",
+    "attendance": 10
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-09",
+    "attendance": 11
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-09",
+    "attendance": 19
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-10",
+    "attendance": 30
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-10",
+    "attendance": 45
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-10",
+    "attendance": 19
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-11",
+    "attendance": 25
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-11",
+    "attendance": 12
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-11",
+    "attendance": 35
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-12",
+    "attendance": 43
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-12",
+    "attendance": 29
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-12",
+    "attendance": 34
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-13",
+    "attendance": 42
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-13",
+    "attendance": 34
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-13",
+    "attendance": 49
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-14",
+    "attendance": 31
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-14",
+    "attendance": 12
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-14",
+    "attendance": 22
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-15",
+    "attendance": 49
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-15",
+    "attendance": 50
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-15",
+    "attendance": 32
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-16",
+    "attendance": 32
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-16",
+    "attendance": 27
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-16",
+    "attendance": 18
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-17",
+    "attendance": 14
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-17",
+    "attendance": 21
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-17",
+    "attendance": 49
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-18",
+    "attendance": 43
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-18",
+    "attendance": 20
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-18",
+    "attendance": 12
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-19",
+    "attendance": 49
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-19",
+    "attendance": 34
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-19",
+    "attendance": 46
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-20",
+    "attendance": 43
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-20",
+    "attendance": 20
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-20",
+    "attendance": 11
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-21",
+    "attendance": 33
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-21",
+    "attendance": 38
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-21",
+    "attendance": 24
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-22",
+    "attendance": 29
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-22",
+    "attendance": 29
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-22",
+    "attendance": 38
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-23",
+    "attendance": 16
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-23",
+    "attendance": 41
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-23",
+    "attendance": 47
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-24",
+    "attendance": 39
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-24",
+    "attendance": 32
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-24",
+    "attendance": 15
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-25",
+    "attendance": 35
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-25",
+    "attendance": 10
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-25",
+    "attendance": 21
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-26",
+    "attendance": 48
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-26",
+    "attendance": 46
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-26",
+    "attendance": 40
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-27",
+    "attendance": 19
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-27",
+    "attendance": 21
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-27",
+    "attendance": 11
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-02-28",
+    "attendance": 15
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-02-28",
+    "attendance": 14
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-02-28",
+    "attendance": 47
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-01",
+    "attendance": 32
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-01",
+    "attendance": 32
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-01",
+    "attendance": 29
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-02",
+    "attendance": 27
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-02",
+    "attendance": 43
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-02",
+    "attendance": 33
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-03",
+    "attendance": 44
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-03",
+    "attendance": 42
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-03",
+    "attendance": 41
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-04",
+    "attendance": 43
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-04",
+    "attendance": 45
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-04",
+    "attendance": 46
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-05",
+    "attendance": 19
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-05",
+    "attendance": 18
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-05",
+    "attendance": 50
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-06",
+    "attendance": 45
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-06",
+    "attendance": 24
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-06",
+    "attendance": 21
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-07",
+    "attendance": 28
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-07",
+    "attendance": 36
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-07",
+    "attendance": 19
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-08",
+    "attendance": 48
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-08",
+    "attendance": 33
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-08",
+    "attendance": 18
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-09",
+    "attendance": 46
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-09",
+    "attendance": 22
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-09",
+    "attendance": 34
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-10",
+    "attendance": 24
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-10",
+    "attendance": 34
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-10",
+    "attendance": 20
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-11",
+    "attendance": 27
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-11",
+    "attendance": 42
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-11",
+    "attendance": 37
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-12",
+    "attendance": 23
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-12",
+    "attendance": 45
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-12",
+    "attendance": 40
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-13",
+    "attendance": 17
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-13",
+    "attendance": 37
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-13",
+    "attendance": 48
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-14",
+    "attendance": 30
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-14",
+    "attendance": 37
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-14",
+    "attendance": 20
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-15",
+    "attendance": 44
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-15",
+    "attendance": 24
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-15",
+    "attendance": 22
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-16",
+    "attendance": 44
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-16",
+    "attendance": 43
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-16",
+    "attendance": 28
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-17",
+    "attendance": 50
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-17",
+    "attendance": 14
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-17",
+    "attendance": 14
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-18",
+    "attendance": 13
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-18",
+    "attendance": 16
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-18",
+    "attendance": 16
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-19",
+    "attendance": 12
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-19",
+    "attendance": 41
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-19",
+    "attendance": 37
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-20",
+    "attendance": 35
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-20",
+    "attendance": 13
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-20",
+    "attendance": 26
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-21",
+    "attendance": 43
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-21",
+    "attendance": 12
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-21",
+    "attendance": 39
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-22",
+    "attendance": 49
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-22",
+    "attendance": 36
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-22",
+    "attendance": 47
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-23",
+    "attendance": 25
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-23",
+    "attendance": 27
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-23",
+    "attendance": 12
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-24",
+    "attendance": 17
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-24",
+    "attendance": 39
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-24",
+    "attendance": 50
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-25",
+    "attendance": 24
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-25",
+    "attendance": 32
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-25",
+    "attendance": 33
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-26",
+    "attendance": 11
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-26",
+    "attendance": 11
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-26",
+    "attendance": 40
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-27",
+    "attendance": 33
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-27",
+    "attendance": 29
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-27",
+    "attendance": 34
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-28",
+    "attendance": 28
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-28",
+    "attendance": 11
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-28",
+    "attendance": 35
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-29",
+    "attendance": 47
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-29",
+    "attendance": 13
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-29",
+    "attendance": 21
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-30",
+    "attendance": 17
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-30",
+    "attendance": 33
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-30",
+    "attendance": 36
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-03-31",
+    "attendance": 37
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-03-31",
+    "attendance": 12
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-03-31",
+    "attendance": 32
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-04-01",
+    "attendance": 14
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-04-01",
+    "attendance": 12
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-04-01",
+    "attendance": 15
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-04-02",
+    "attendance": 40
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-04-02",
+    "attendance": 21
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-04-02",
+    "attendance": 14
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-04-03",
+    "attendance": 38
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-04-03",
+    "attendance": 27
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-04-03",
+    "attendance": 27
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-04-04",
+    "attendance": 23
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-04-04",
+    "attendance": 42
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-04-04",
+    "attendance": 22
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-04-05",
+    "attendance": 43
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-04-05",
+    "attendance": 43
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-04-05",
+    "attendance": 50
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-04-06",
+    "attendance": 21
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-04-06",
+    "attendance": 10
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-04-06",
+    "attendance": 38
+  },
+  {
+    "camera_id": "CAM001",
+    "date": "2025-04-07",
+    "attendance": 25
+  },
+  {
+    "camera_id": "CAM002",
+    "date": "2025-04-07",
+    "attendance": 37
+  },
+  {
+    "camera_id": "CAM003",
+    "date": "2025-04-07",
+    "attendance": 18
+  }
+]

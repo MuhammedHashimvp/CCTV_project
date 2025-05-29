@@ -5,9 +5,6 @@ const CCTVPlayer = () => {
   const videoSources = [
     '/videos/cam1.mp4',
     '/videos/cam2.mp4',
-    '/videos/cam3.mp4',
-    '/videos/cam3.mp4',
-    "blob:https://www.earthcam.com/d599ac52-2164-4479-aae4-8a60ad9563c9"
   ];
 
   return (
