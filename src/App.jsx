@@ -9,6 +9,8 @@ import Dashboard from './Componenet/Dashboard'
 import Behaviour from './Componenet/Behaviour'
 import Testcomponent from './Componenet/Testcomponent'
 import Students from './Componenet/Students'
+import Videotrim from './Componenet/Videotrim'
+
 
 
 
@@ -26,6 +28,8 @@ function App() {
         <Route path='/beh' element={<Behaviour/>}/>
         <Route path='/stdlist' element={<Students/>}/>
         <Route path='/test' element={<Testcomponent/>}/>
+        <Route path='/vidtrim' element={<Videotrim/>}/>
+
        </Routes>
        
     </>

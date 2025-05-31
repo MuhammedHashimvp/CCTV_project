@@ -56,6 +56,9 @@ function Admin() {
       <Navbar />
       <div className=" container">
         <div className="add-camera d-flex gap-3 justify-content-end m-4">
+          <Button variant="primary" onClick={()=>navv('/vidtrim')}>
+            Videotrum
+          </Button>
           <Button variant="primary" onClick={()=>navv('/stdlist')}>
             Students List
           </Button>
