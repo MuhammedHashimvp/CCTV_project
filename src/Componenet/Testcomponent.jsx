@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { hostip } from "../Api/Commonapi";
 
 export default function Testcomponent() {
   const [videoFile, setVideoFile] = useState(null);
@@ -27,7 +28,7 @@ export default function Testcomponent() {
     formData.append("video", videoFile);
 
     try {
-        const response = await axios.post("http://localhost:8000/Humantrack/", formData, {
+        const response = await axios.post(hostip+"/Humantrack/", formData, {
           headers: { "Content-Type": "multipart/form-data" },
         });
 
@@ -50,33 +51,35 @@ export default function Testcomponent() {
   };
 
   return (
-    <div>
-      <h2>Upload Video for Human Tracking</h2>
-      <input type="file" accept="video/*" onChange={handleFileChange} />
-      <button onClick={handleUpload} disabled={loading}>
-        {loading ? "Processing..." : "Upload & Process"}
-      </button>
-
-      {outputUrl && (
-        <div style={{ marginTop: "20px" }}>
-          <h3>Output Video:</h3>
-          <video width="400" controls>
-            <source src={outputUrl} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <p>
-            <a href={outputUrl} target="_blank" rel="noopener noreferrer">
-              Download Output Video
-            </a>
-          </p>
-        </div>
-      )}
-
-      {errorMsg && (
-        <div style={{ color: "red", marginTop: "20px" }}>
-          <strong>Error:</strong> {errorMsg}
-        </div>
-      )}
-    </div>
+<>
+      <div>
+        <h2>Upload Video for Human Tracking</h2>
+        <input type="file" accept="video/*" onChange={handleFileChange} />
+        <button onClick={handleUpload} disabled={loading}>
+          {loading ? "Processing..." : "Upload & Process"}
+        </button>
+  
+        {outputUrl && (
+          <div style={{ marginTop: "20px" }}>
+            <h3>Output Video:</h3>
+            <video width="400" controls>
+              <source src={outputUrl} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <p>
+              <a href={outputUrl} target="_blank" rel="noopener noreferrer">
+                Download Output Video
+              </a>
+            </p>
+          </div>
+        )}
+  
+        {errorMsg && (
+          <div style={{ color: "red", marginTop: "20px" }}>
+            <strong>Error:</strong> {errorMsg}
+          </div>
+        )}
+      </div>
+</>
   );
 }
