@@ -1,43 +1,82 @@
-import React, { useEffect, useState } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { graphget } from '../Api/Allapi';  // Ensure this path is correct
+import React, { useState } from "react";
+import axios from "axios";
 
-function TestComponent() {
-  const [attendanceData, setAttendanceData] = useState([]);
+export default function Testcomponent() {
+  const [videoFile, setVideoFile] = useState(null);
+  const [outputUrl, setOutputUrl] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    const header = {
-      "content-type": "application/json",
-      authorization: `token ${sessionStorage.getItem("token")}`,
-    };
+  const handleFileChange = (e) => {
+    setVideoFile(e.target.files[0]);
+    setOutputUrl("");
+    setErrorMsg("");
+  };
 
-    graphget(header).then((res) => {
-      const data = res.data
-        .filter((entry) => entry.Action === 'Attendance')
-        .map((entry) => ({
-          date: entry.Date,
-          attendance: entry.Data,
-        }));
-        console.log(data);
-        
-      
-      setAttendanceData(data);
-    })
-  }, []);
+  const handleUpload = async () => {
+    if (!videoFile) {
+      alert("Please select a video first.");
+      return;
+    }
+
+    setLoading(true);
+    setOutputUrl("");
+    setErrorMsg("");
+
+    const formData = new FormData();
+    formData.append("video", videoFile);
+
+    try {
+        const response = await axios.post("http://localhost:8000/Humantrack/", formData, {
+          headers: { "Content-Type": "multipart/form-data" },
+        });
+
+      // If backend sends the output URL on success
+      if (response.data.output_url) {
+        setOutputUrl(response.data.output_url);
+      } else {
+        setErrorMsg("No output URL returned.");
+      }
+    } catch (error) {
+      // Show backend error message if available
+      if (error.response && error.response.data && error.response.data.error) {
+        setErrorMsg(error.response.data.error);
+      } else {
+        setErrorMsg("Upload failed due to an unknown error.");
+      }
+    }
+
+    setLoading(false);
+  };
 
   return (
-    <div className="p-4 container bg-light">
-      <ResponsiveContainer width="100%" height={300}>
-        <LineChart data={attendanceData}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="date" />
-          <YAxis />
-          <Tooltip />
-          <Line type="monotone" dataKey="attendance" stroke="#8884d8" strokeWidth={2} />
-        </LineChart>
-      </ResponsiveContainer>
+    <div>
+      <h2>Upload Video for Human Tracking</h2>
+      <input type="file" accept="video/*" onChange={handleFileChange} />
+      <button onClick={handleUpload} disabled={loading}>
+        {loading ? "Processing..." : "Upload & Process"}
+      </button>
+
+      {outputUrl && (
+        <div style={{ marginTop: "20px" }}>
+          <h3>Output Video:</h3>
+          <video width="400" controls>
+            <source src={outputUrl} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p>
+            <a href={outputUrl} target="_blank" rel="noopener noreferrer">
+              Download Output Video
+            </a>
+          </p>
+        </div>
+      )}
+
+      {errorMsg && (
+        <div style={{ color: "red", marginTop: "20px" }}>
+          <strong>Error:</strong> {errorMsg}
+        </div>
+      )}
     </div>
   );
 }
-
-export default TestComponent;
