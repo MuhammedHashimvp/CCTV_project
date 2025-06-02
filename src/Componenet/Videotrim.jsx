@@ -66,27 +66,53 @@ function Videotrim() {
               onChange={handleFileChange}
             />
             <button
-              className="btn btn-success mt-3"
+              className="btn btn-success m-3"
               type="button"
               onClick={handleUpload}
-               disabled={loading}
+              disabled={loading}
             >
-               {loading ? "Processing..." : "Upload & Process"}
+              {loading ? "Processing..." : "Upload & Process"}
             </button>
+            {
+  outputUrl &&
+<a className="btn btn-primary ms-3"
+  href={outputUrl}
+  onClick={(e) => {
+    e.preventDefault();
+    fetch(outputUrl)
+      .then(res => res.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        a.download = 'video.mp4'; // set desired filename
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        a.remove();
+      })
+      .catch(() => alert('Download failed'));
+  }}
+>
+  Download video
+</a>
+}
           </form>
+
+
         </div>
         <div className="w-50 ">
-          <div style={{height:'500px'}} className="align-items-center d-flex">
-
-          
-          {outputUrl && (
-            <video width={"100%"} controls>
-                            <source src={outputUrl} type="video/mp4" />
-
-              loading
-            </video>
-            
-          )}
+          <div
+            style={{ height: "500px" }}
+            className="align-items-center d-flex"
+          >
+            {outputUrl && (
+              <video width={"100%"} controls>
+                <source src={outputUrl} type="video/mp4" />
+                loading
+              </video>
+            )}
           </div>
         </div>
       </div>
