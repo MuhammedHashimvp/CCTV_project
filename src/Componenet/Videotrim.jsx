@@ -80,7 +80,7 @@ function Videotrim() {
 
           
           {outputUrl && (
-            <video src=""   height={""} controls>
+            <video width={"100%"} controls>
                             <source src={outputUrl} type="video/mp4" />
 
               loading
