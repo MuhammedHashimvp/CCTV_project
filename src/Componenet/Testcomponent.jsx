@@ -1,85 +1,76 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { hostip } from "../Api/Commonapi";
+import Navbar from "./Navbar";
 
-export default function Testcomponent() {
-  const [videoFile, setVideoFile] = useState(null);
-  const [outputUrl, setOutputUrl] = useState("");
-  const [errorMsg, setErrorMsg] = useState("");
-  const [loading, setLoading] = useState(false);
+function Testcomponent() {
+  const [videos, setVideos] = useState([]);
+  const [video, setVideo] = useState(null);
 
-  const handleFileChange = (e) => {
-    setVideoFile(e.target.files[0]);
-    setOutputUrl("");
-    setErrorMsg("");
+  useEffect(() => {
+    axios.get("http://localhost:8000/hogupload/").then((res) => {
+      setVideos(res.data);
+    });
+  }, []);
+
+  const upload = async () => {
+    const form = new FormData();
+    form.append("video", video);
+    await axios.post("http://localhost:8000/hogupload/", form);
   };
 
-  const handleUpload = async () => {
-    if (!videoFile) {
-      alert("Please select a video first.");
-      return;
-    }
-
-    setLoading(true);
-    setOutputUrl("");
-    setErrorMsg("");
-
-    const formData = new FormData();
-    formData.append("video", videoFile);
-
+  const analyze = async (id) => {
     try {
-        const response = await axios.post(hostip+"/Humantrack/", formData, {
-          headers: { "Content-Type": "multipart/form-data" },
-        });
-
-      // If backend sends the output URL on success
-      if (response.data.output_url) {
-        setOutputUrl(response.data.output_url);
-      } else {
-        setErrorMsg("No output URL returned.");
-      }
+      const res = await axios.post("http://localhost:8000/hoganalyze/", { video_id: id });
+      alert("Analysis complete! Output URL: " + res.data.output_url);
+      // Optionally refresh the videos list to get updated trimmed URLs:
+      const updated = await axios.get("http://localhost:8000/hogupload/");
+      setVideos(updated.data);
     } catch (error) {
-      // Show backend error message if available
-      if (error.response && error.response.data && error.response.data.error) {
-        setErrorMsg(error.response.data.error);
-      } else {
-        setErrorMsg("Upload failed due to an unknown error.");
-      }
+      alert("Analysis failed");
+      console.error(error);
     }
-
-    setLoading(false);
   };
 
   return (
-<>
-      <div>
-        <h2>Upload Video for Human Tracking</h2>
-        <input type="file" accept="video/*" onChange={handleFileChange} />
-        <button onClick={handleUpload} disabled={loading}>
-          {loading ? "Processing..." : "Upload & Process"}
+    <>
+      <Navbar />
+      <form>
+        <input type="file" onChange={(e) => setVideo(e.target.files[0])} />
+        <button type="button" onClick={upload}>
+          Upload
         </button>
-  
-        {outputUrl && (
-          <div style={{ marginTop: "20px" }}>
-            <h3>Output Video:</h3>
-            <video width="400" controls>
-              <source src={outputUrl} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <p>
-              <a href={outputUrl} target="_blank" rel="noopener noreferrer">
-                Download Output Video
-              </a>
-            </p>
+      </form>
+
+      <div>
+        {videos.map((v) => (
+          <div
+            key={v.id}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "20px",
+              marginBottom: "20px",
+            }}
+          >
+            {/* Original video */}
+            <video src={`http://localhost:8000${v.video}`} controls width="400" />
+
+            {/* Trimmed video, if exists */}
+            {v.trimmed ? (
+              <video src={`http://localhost:8000${v.trimmed}`} controls width="400" />
+            ) : (
+              <div style={{ width: 400, height: 225, lineHeight: "225px", textAlign: "center", border: "1px solid #ccc", color: "#777" }}>
+                No trimmed video
+              </div>
+            )}
+
+            {/* Analyze button */}
+            <button onClick={() => analyze(v.id)}>Analyze</button>
           </div>
-        )}
-  
-        {errorMsg && (
-          <div style={{ color: "red", marginTop: "20px" }}>
-            <strong>Error:</strong> {errorMsg}
-          </div>
-        )}
+        ))}
       </div>
-</>
+    </>
   );
 }
+
+export default Testcomponent;
