@@ -1,0 +1,4 @@
+.ztd-hover td:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}

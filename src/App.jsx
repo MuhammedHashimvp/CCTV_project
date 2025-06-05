@@ -10,8 +10,11 @@ import Behaviour from './Componenet/Behaviour'
 import Testcomponent from './Componenet/Testcomponent'
 import Students from './Componenet/Students'
 import Videotrim from './Componenet/Videotrim'
+import Testt from './Componenet/Testt'
+import Hogdetected from './Componenet/Hogdetected'
 
 
+  import { ToastContainer, toast } from 'react-toastify';
 
 
 function App() {
@@ -28,9 +31,11 @@ function App() {
         <Route path='/beh' element={<Behaviour/>}/>
         <Route path='/stdlist' element={<Students/>}/>
         <Route path='/test' element={<Testcomponent/>}/>
-        <Route path='/vidtrim' element={<Videotrim/>}/>
+        <Route path='/vidtrim' element={<Hogdetected/>}/>
 
        </Routes>
+               <ToastContainer />
+
        
     </>
   )

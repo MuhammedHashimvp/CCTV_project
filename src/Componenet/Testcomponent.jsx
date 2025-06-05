@@ -1,15 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import Navbar from "./Navbar";
 import { hostip } from "../Api/Commonapi";
 
 import Modal from 'react-bootstrap/Modal';
+import { toast } from "react-toastify";
 function Testcomponent() {
+    const logRef = useRef(null);
+
   const [videos, setVideos] = useState([]);
   const [video, setVideo] = useState(null);
   const [videoplay, setVideoplay] = useState("");
-  
+  const [loadingIds, setLoadingIds] = useState([]);
+
+  const [logs, setLogs] = useState([]);
+
   const [show, setShow] = useState(false);
+
+    useEffect(() => {
+    logRef.current?.scrollTo(0, logRef.current.scrollHeight);
+  }, [logs]);
 
   const handleClose = () => setShow(false);
   const handleShow = (vidname) => {
@@ -31,18 +41,36 @@ function Testcomponent() {
     const updated = await axios.get(hostip + "hogupload/");
     setVideos(updated.data);
   };
+const analyze = async (id) => {
+  setLoadingIds(prev => [...prev, id]); // Add ID to loading list
+  try {
+    const res = await axios.post(hostip + "/hoganalyze/", { video_id: id });
+    toast.success("Analysis complete! ");
+    const updated = await axios.get(hostip + "/hogupload/");
+    setVideos(updated.data);
+  } catch (error) {
+    toast.error("Analysis failed! ");
+    console.error(error);
+  } finally {
+    setLoadingIds(prev => prev.filter(i => i !== id)); // Remove ID
+  }
+};
 
-  const analyze = async (id) => {
-    try {
-      const res = await axios.post(hostip + "/hoganalyze/", { video_id: id });
-      alert("Analysis complete! Output URL: " + res.data.output_url);
-      const updated = await axios.get(hostip + "/hogupload/");
-      setVideos(updated.data);
-    } catch (error) {
-      alert("Analysis failed");
-      console.error(error);
-    }
-  };
+
+const fetchLogs = () => {
+  if (loadingIds.length === 0) return;
+  axios.get(hostip + "/trackprogress/")
+    .then(res => setLogs(res.data.progress))
+    .catch(() => {});
+};
+
+useEffect(() => {
+  if (loadingIds.length === 0) return;
+  const interval = setInterval(fetchLogs, 1000);
+  return () => clearInterval(interval);
+}, [loadingIds]);
+
+  
 
   return (
     <>
@@ -63,8 +91,9 @@ function Testcomponent() {
         </div>
       </div>
 
+
       <div className="container">
-        <table className="table table-striped table-hover">
+        <table className="table table-striped">
           <thead>
             <tr>
               <th>Uploaded Videos</th>
@@ -74,18 +103,34 @@ function Testcomponent() {
           </thead>
           <tbody>
             {videos.map((v,j)=>(
-              <tr key={j} >
-                <td onClick={()=>(handleShow(v.video))}>{v.video.replace("/media/Hoguploads/", "")}</td>
+              <tr key={j} className="ztd-hover">
+                <td onClick={()=>(handleShow(v.video))}>{v.video.replace("http://127.0.0.1:8000/media/Hoguploads/", "")}</td>
 
-                {v.trimmed ? <td onClick={()=>(handleShow(v.trimmed ))}>{v.trimmed.replace("/media/hogdet/", "")}</td> : <td>Not analysed</td>}
+                {v.trimmed ? <td onClick={()=>(handleShow(v.trimmed ))}>{v.trimmed.replace("http://127.0.0.1:8000/media/hogdet/", "")}</td> : <td>Not analysed</td>}
 
-                <td><button className=" btn btn-sm btn-primary" onClick={()=>analyze(v.id)}>Analyse</button></td>
+                <td>
+                  <button
+  className="btn btn-sm btn-primary"
+  onClick={() => analyze(v.id)}
+  disabled={loadingIds.includes(v.id)}
+>
+  {loadingIds.includes(v.id) ? "Analyzing..." : "Analyze"}
+</button>
+
+                </td>
               </tr>
             ))
               
             }
           </tbody>
         </table>
+    <div
+      ref={logRef}
+      className="p-3 bg-dark w-100 text-white overflow-y-scroll overflow-x-hidden mb-5"
+      style={{ height: "300px" }}
+    >
+      <pre>{logs}</pre>
+    </div>
 
       </div>
 
@@ -96,9 +141,9 @@ function Testcomponent() {
         <Modal.Header closeButton>
 <Modal.Title>{videoplay ? videoplay.split("/").pop() : "No video selected"}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-                <video src={hostip + videoplay} controls width="100%" />
-        </Modal.Body>
+<Modal.Body>
+  <video src={videoplay} controls width="100%" />
+</Modal.Body>
         <Modal.Footer></Modal.Footer>
       </Modal>
     </>
