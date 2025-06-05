@@ -30,6 +30,7 @@ function App() {
         <Route path='/dash' element={<Dashboard/>}/>
         <Route path='/beh' element={<Behaviour/>}/>
         <Route path='/stdlist' element={<Students/>}/>
+        <Route path='/vid' element={<Videotrim/>}/>
         <Route path='/test' element={<Testcomponent/>}/>
         <Route path='/vidtrim' element={<Hogdetected/>}/>
 
