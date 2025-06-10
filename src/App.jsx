@@ -15,6 +15,7 @@ import Hogdetected from './Componenet/Hogdetected'
 
 
   import { ToastContainer, toast } from 'react-toastify';
+import VideoAnalyze from './Componenet/VideoAnalyze'
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
         <Route path='/beh' element={<Behaviour/>}/>
         <Route path='/stdlist' element={<Students/>}/>
         <Route path='/vid' element={<Videotrim/>}/>
-        <Route path='/test' element={<Testcomponent/>}/>
+        <Route path='/analyzer' element={<VideoAnalyze/>}/>
         <Route path='/vidtrim' element={<Hogdetected/>}/>
 
        </Routes>

@@ -104,9 +104,9 @@ useEffect(() => {
           <tbody>
             {videos.map((v,j)=>(
               <tr key={j} className="ztd-hover">
-                <td onClick={()=>(handleShow(v.video))}>{v.video.replace("http://127.0.0.1:8000/media/Hoguploads/", "")}</td>
+                <td onClick={()=>(handleShow(v.video))}>{v.video.split('/').pop()}</td>
 
-                {v.trimmed ? <td onClick={()=>(handleShow(v.trimmed ))}>{v.trimmed.replace("http://127.0.0.1:8000/media/hogdet/", "")}</td> : <td>Not analysed</td>}
+                {v.trimmed ? <td onClick={()=>(handleShow(v.trimmed ))}>{v.trimmed.split('/').pop()}</td> : <td>Not analysed</td>}
 
                 <td>
                   <button

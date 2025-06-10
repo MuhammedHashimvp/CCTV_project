@@ -4,7 +4,7 @@ import { FaUser } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom';
 import { TokenGenerate } from '../Api/Allapi';
-
+  import { toast } from 'react-toastify';
 
 
 function Login() {
@@ -18,9 +18,12 @@ function Login() {
         TokenGenerate(logData)
           .then(res => {
             sessionStorage.setItem('token', res.data.token);
+            toast.success('Login Success1')
             navv('/home');
           })
-          .catch(err => console.error("Login failed", err)); // Handle API errors
+          .catch(err => {
+            toast.error('Login failed :'+ err)
+          });
     }
 
 

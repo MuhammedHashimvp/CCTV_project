@@ -1,0 +1,6 @@
+Footer
+Analyze in header
+themes
+Cctv running mode ( 8 videos in a single page without header)
+Hog training
+show log button
