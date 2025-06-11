@@ -1,6 +1,6 @@
 .header{
 
-    background-color: rgb(3, 14, 68);
+    background-color: var(--mainclr)
 
 }
 

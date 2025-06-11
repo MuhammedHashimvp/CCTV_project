@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import {  useNavigate } from 'react-router-dom';
 import { Navbar as Navi, Container, Nav, NavDropdown } from 'react-bootstrap';
@@ -7,11 +7,16 @@ import { Navbar as Navi, Container, Nav, NavDropdown } from 'react-bootstrap';
 
 
 function Navbar() {
-
+  const [clr,setclr]=useState(0)
   const navv =useNavigate()
   const logout=()=>{
     sessionStorage.clear('token')
     navv('/')
+  }
+  const colorlist =["#444","#432","#003","#245","#4f2","#ff2","#ee0","#f0f"]
+  const themeset=()=>{
+    document.documentElement.style.setProperty('--mainclr',colorlist[clr])
+    setclr(clr+1)
   }
 
 
@@ -51,10 +56,12 @@ function Navbar() {
         <Navi.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link onClick={()=>navv('/home')} >Home</Nav.Link>
+            <Nav.Link onClick={()=>(navv('/analyzer'))}  >Analyze Video</Nav.Link>
             <Nav.Link >About</Nav.Link>
             
           </Nav>
           <Nav>
+            <Nav.Link className='text-light nv-light' onClick={()=>themeset()}>theme</Nav.Link>
             <Nav.Link className='text-success nv-success' onClick={()=>navv("/admin")}>Admin</Nav.Link>
             <Nav.Link className='text-danger nv-danger' onClick={()=>logout()} >
               Logout

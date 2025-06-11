@@ -12,10 +12,10 @@ import Students from './Componenet/Students'
 import Videotrim from './Componenet/Videotrim'
 import Testt from './Componenet/Testt'
 import Hogdetected from './Componenet/Hogdetected'
-
-
-  import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import VideoAnalyze from './Componenet/VideoAnalyze'
+import Foot from './Componenet/Foot'
+import CctvFull from './Componenet/CctvFull'
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
         <Route path='/' element={<Login/>}/>
         <Route path='/home' element={<Home/>}/> 
         <Route path='/home/:seldate' element={<Home/>}/> 
-        <Route path='/video' element={<Video/>}/>
+        {/* <Route path='/video' element={<Video/>}/> */}
         <Route path='/admin' element={<Admin/>}/>
         <Route path='/dash' element={<Dashboard/>}/>
         <Route path='/beh' element={<Behaviour/>}/>
@@ -34,9 +34,12 @@ function App() {
         <Route path='/vid' element={<Videotrim/>}/>
         <Route path='/analyzer' element={<VideoAnalyze/>}/>
         <Route path='/vidtrim' element={<Hogdetected/>}/>
+        <Route path='/video' element={<CctvFull/>}/>
 
        </Routes>
                <ToastContainer />
+
+               <Foot/>
 
        
     </>

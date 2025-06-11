@@ -2,3 +2,8 @@
     background-color: #ddd;
     cursor: pointer;
 }
+
+:root {
+    --mainclr: #13004c;
+    --bgclr:#000
+}
